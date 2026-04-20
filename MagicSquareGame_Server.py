@@ -11,8 +11,7 @@ def start_server():
 
 def start_client():
     s = socket.socket()
-    ip = input("Enter host IP: ")
-    s.connect((ip, 9999))
+    s.connect(("localhost", 9999))
     print("Connected to server")
     return s
 
